@@ -34,7 +34,8 @@ It represents the purchase transaction and maintains customer information, shopp
 Manage the payment process and support multiple methods (card, transfer, etc.). It also simulates payment validation.
 
 ## Instructions
-Descargar el arvhivo y correr en terminal con:
+Download the file and run in terminal with:
 ```bash
-c++ electronic_commerce.cpp
+c++ e-commerce.cpp
 ```
+
