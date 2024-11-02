@@ -33,3 +33,8 @@ It represents the purchase transaction and maintains customer information, shopp
 ### 5. Payment Class
 Manage the payment process and support multiple methods (card, transfer, etc.). It also simulates payment validation.
 
+## Instructions
+Descargar el arvhivo y correr en terminal con:
+```bash
+c++ electronic_commerce.cpp
+```
