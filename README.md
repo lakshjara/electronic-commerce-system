@@ -22,14 +22,14 @@ Example of use
 
 ## Clases 
 
-# 1. Product Class
+### 1. Product Class
 Represents the items available in the store, managing their details and quantities in inventory.
-# 2. Client Class
+### 2. Client Class
 Manage customer information, including personal details and preferred payment methods.
-# 3. Cart Class
+### 3. Cart Class
 Allows you to add or remove products before completing the purchase and maintains a list of selected items.
-# 4. Transaction Class
+### 4. Transaction Class
 It represents the purchase transaction and maintains customer information, shopping cart, and transaction status.
-# 5. Payment Class
+### 5. Payment Class
 Manage the payment process and support multiple methods (card, transfer, etc.). It also simulates payment validation.
 
