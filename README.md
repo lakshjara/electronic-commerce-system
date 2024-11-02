@@ -1,7 +1,7 @@
 # Electronic Commerce System
 
 ## Context
-Para ayudar a los pequeños empresarios a implementar estrategias de comercio electrónico, propongo un proyecto en C++ que se centre en la gestión de información de transacciones, inventario, clientes y pagos en una plataforma de e-commerce. Este proyecto proporciona una estructura de clases para modelar la funcionalidad básica de un sistema de ventas en línea. Las cinco clases principales son: Producto, Cliente, Transaccion, Carrito y Pago.
+To help small business owners implement e-commerce strategies, I propose a C++ project that focuses on managing transaction, inventory, customer and payment information on an e-commerce platform. This project provides a class structure to model the basic functionality of an online sales system. The five main classes are: Product, Customer, Transaction, Cart and Payment.
 
 ## System operation
 
