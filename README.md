@@ -25,7 +25,7 @@ Example of use
 ### 1. Product Class
 Represents the items available in the store, managing their details and quantities in inventory.
 ### 2. Client Class
-Manage customer information, including personal details and preferred payment methods.
+Manage customer information, including personal details.
 ### 3. Cart Class
 Allows you to add or remove products before completing the purchase and maintains a list of selected items.
 ### 4. Transaction Class
