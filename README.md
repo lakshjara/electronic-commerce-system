@@ -36,6 +36,9 @@ Manage the payment process and support multiple methods (card, transfer, etc.). 
 ## Instructions
 Download the file and run in terminal with:
 ```bash
-c++ e-commerce.cpp
+g++ main.cpp Product.cpp Customer.cpp Cart.cpp Transaction.cpp Payment.cpp 
 ```
-
+## Run the program
+```bash
+./ecommerce
+```
