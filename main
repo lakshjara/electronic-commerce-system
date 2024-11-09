@@ -1,0 +1,38 @@
+#include <iostream>
+#include "Product.h"
+#include "Customer.h"
+#include "Cart.h"
+#include "Transaction.h"
+#include "Payment.h"
+
+int main() {
+    // Creación de productos
+    Product product1(1, "Laptop", 999.99, 10);
+    Product product2(2, "Phone", 499.99, 20);
+
+    // Creación de cliente
+    Customer customer1(1, "John Doe", "john@example.com", "555-1234");
+
+    // Creación del carrito y adición de productos
+    Cart cart;
+    cart.addItem(product1, 1);
+    cart.addItem(product2, 2);
+
+    // Creación de transacción
+    Transaction transaction(1001, customer1, cart);
+    std::cout << "Total de la transacción: $" << transaction.calculateTotal() << std::endl;
+
+    // Procesamiento del pago
+    Payment payment(5001, transaction.calculateTotal(), "Card");
+    if (payment.processPayment()) {
+        std::cout << "Pago procesado exitosamente." << std::endl;
+        transaction.updateStatus("Completed");
+    } else {
+        std::cout << "Error en el procesamiento del pago." << std::endl;
+        transaction.updateStatus("Failed");
+    }
+
+    std::cout << "Estado de la transacción: " << transaction.getStatus() << std::endl;
+
+    return 0;
+}
