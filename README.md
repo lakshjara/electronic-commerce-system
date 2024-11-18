@@ -1,4 +1,4 @@
-![e-commerce drawio](https://github.com/user-attachments/assets/def9900b-01c6-4845-b0ac-d259d36bc85e)# Electronic Commerce System
+# Electronic Commerce System
 
 ## Context
 To help small business owners implement e-commerce strategies, I propose a C++ project that focuses on managing transaction, inventory, customer and payment information on an e-commerce platform. This project provides a class structure to model the basic functionality of an online sales system. The five main classes are: Product, Customer, Transaction, Cart and Payment.
