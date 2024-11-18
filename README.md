@@ -32,6 +32,7 @@ Allows you to add or remove products before completing the purchase and maintain
 It represents the purchase transaction and maintains customer information, shopping cart, and transaction status.
 ### 5. Payment Class
 Manage the payment process and support multiple methods (card, transfer, etc.). It also simulates payment validation.
+![e-commerce drawio](https://github.com/user-attachments/assets/66bf5b24-3dec-4116-b8be-684a3b3356dd)
 
 ## Instructions
 Download the file and run in terminal with:
