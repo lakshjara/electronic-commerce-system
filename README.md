@@ -12,7 +12,7 @@ Recording each transaction with payment details, whether in cash or by card.
 Modeling specific payment method information to handle different scenarios.
 
 ## Main Components
-Transactions:
+#### Transactions: 
 The central class of the system is Transaction, which logs details of each purchase, such as the customer making the transaction, the product purchased, the total amount, and the payment method used.
 This class is specialized into two types of payment methods using the subclasses Card (card) and Cash (cash).
 Customers:
