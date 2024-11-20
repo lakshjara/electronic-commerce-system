@@ -15,19 +15,19 @@ Modeling specific payment method information to handle different scenarios.
 #### Transactions: 
 The central class of the system is Transaction, which logs details of each purchase, such as the customer making the transaction, the product purchased, the total amount, and the payment method used.
 This class is specialized into two types of payment methods using the subclasses Card (card) and Cash (cash).
-Customers:
+#### Customers:
 The Customer class represents the customers making purchases. Each customer has a unique identifier, a name, and an email for contact purposes.
-Products:
+#### Products:
 The Product class models the products available for sale. Each product has a unique identifier, a name, and a price.
-Payment Methods:
+#### Payment Methods:
 Card: The Card class inherits from Transaction and contains additional information about the bank associated with the card used for payment.
 Cash: The Cash class also inherits from Transaction, but includes details about the bills used in the transaction.
 
 ## Relationships Between Classes
-Composition:
+#### Composition:
 The Transaction class depends on Customer and Product as essential parts of a transaction. This is modeled as a composition relationship (solid diamonds in the diagram).
 Without a customer or product, a transaction does not make sense.
-Inheritance:
+#### Inheritance:
 Card and Cash inherit from the base class Transaction. This means they are specialized types of transactions that add their own unique details for the payment method.
 
 ## Usage Scenario
