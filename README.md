@@ -21,6 +21,7 @@ The Customer class represents the customers making purchases. Each customer has 
 The Product class models the products available for sale. Each product has a unique identifier, a name, and a price.
 #### Payment Methods:
 Card: The Card class inherits from Transaction and contains additional information about the bank associated with the card used for payment.
+
 Cash: The Cash class also inherits from Transaction, but includes details about the bills used in the transaction.
 
 ## Relationships Between Classes
