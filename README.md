@@ -34,7 +34,7 @@ It represents the purchase transaction and maintains customer information, shopp
 Manage the payment process and support multiple methods (card, transfer, etc.). It also simulates payment validation.
 
 ## UML Diagram
-![e-commerce drawio](https://github.com/user-attachments/assets/d9f1f35d-e4fb-4384-b1fe-d5b329462da0)
+![image](https://github.com/user-attachments/assets/6c216f84-be1f-4e9d-a291-4eda0ae851fc)
 
 ## Instructions
 Download the file and run in terminal with:
