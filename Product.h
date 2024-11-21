@@ -2,20 +2,22 @@
 #define PRODUCT_H
 
 #include <string>
+using namespace std;
 
 class Product {
 private:
     int id;
-    std::string name;
+    string name;
     double price;
-    int stock;
 
 public:
-    Product(int id, std::string name, double price, int stock);
-    void updateStock(int quantity);
+    Product(int productId, string productName, double productPrice);
+
+    int getId();
+    string getName();
     double getPrice();
-    std::string getName();
-    int getStock();
+    void setPrice(double newPrice);
+    string getProductData();
 };
 
 #endif
