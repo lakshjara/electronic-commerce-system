@@ -1,8 +1,18 @@
 #include "Customer.h"
 
-Customer::Customer(int id, std::string name, std::string email, std::string phone)
-    : id(id), name(name), email(email), phone(phone) {}
+// Constructor
+Customer::Customer(int customerId, string customerName, string customerEmail)
+    : id(customerId), name(customerName), email(customerEmail) {}
 
-std::string Customer::getDetails() {
-    return name + " (" + email + ")";
+// Getters
+int Customer::getId() { return id; }
+string Customer::getName() { return name; }
+string Customer::getEmail() { return email; }
+
+// Setters
+void Customer::setEmail(string newEmail) { email = newEmail; }
+
+// Method to get full customer data
+string Customer::getCustomerData() {
+    return "Customer ID: " + to_string(id) + ", Name: " + name + ", Email: " + email;
 }
