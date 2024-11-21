@@ -1,20 +1,18 @@
 #include "Product.h"
 
-Product::Product(int id, std::string name, double price, int stock)
-    : id(id), name(name), price(price), stock(stock) {}
+// Constructor
+Product::Product(int productId, string productName, double productPrice)
+    : id(productId), name(productName), price(productPrice) {}
 
-void Product::updateStock(int quantity) {
-    // Método vacío
-}
+// Getters
+int Product::getId() { return id; }
+string Product::getName() { return name; }
+double Product::getPrice() { return price; }
 
-double Product::getPrice() {
-    return price;
-}
+// Setters
+void Product::setPrice(double newPrice) { price = newPrice; }
 
-std::string Product::getName() {
-    return name;
-}
-
-int Product::getStock() {
-    return stock;
+// Method to get full product data
+string Product::getProductData() {
+    return "Product ID: " + to_string(id) + ", Name: " + name + ", Price: $" + to_string(price);
 }
