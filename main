@@ -1,38 +1,25 @@
 #include <iostream>
-#include "Product.h"
 #include "Customer.h"
-#include "Cart.h"
-#include "Transaction.h"
-#include "Payment.h"
+#include "Product.h"
+#include "Card.h"
+#include "Cash.h"
+using namespace std;
 
 int main() {
-    // Creación de productos
-    Product product1(1, "Laptop", 999.99, 10);
-    Product product2(2, "Phone", 499.99, 20);
+    // Create a customer
+    Customer customer1(1, "John Doe", "john.doe@example.com");
 
-    // Creación de cliente
-    Customer customer1(1, "John Doe", "john@example.com", "555-1234");
+    // Create a product
+    Product product1(101, "Laptop", 1200.50);
 
-    // Creación del carrito y adición de productos
-    Cart cart;
-    cart.addItem(product1, 1);
-    cart.addItem(product2, 2);
+    // Create a card transaction
+    Card cardTransaction(1001, customer1, 1200.50, product1, "Bank of America");
+    cout << "Card Transaction Details:\n" << cardTransaction.getTransactionData() << endl;
 
-    // Creación de transacción
-    Transaction transaction(1001, customer1, cart);
-    std::cout << "Total de la transacción: $" << transaction.calculateTotal() << std::endl;
-
-    // Procesamiento del pago
-    Payment payment(5001, transaction.calculateTotal(), "Card");
-    if (payment.processPayment()) {
-        std::cout << "Pago procesado exitosamente." << std::endl;
-        transaction.updateStatus("Completed");
-    } else {
-        std::cout << "Error en el procesamiento del pago." << std::endl;
-        transaction.updateStatus("Failed");
-    }
-
-    std::cout << "Estado de la transacción: " << transaction.getStatus() << std::endl;
+    // Create a cash transaction
+    Cash cashTransaction(1002, customer1, 1200.50, product1, "Five $100 bills, Ten $50 bills");
+    cout << "\nCash Transaction Details:\n" << cashTransaction.getTransactionData() << endl;
 
     return 0;
 }
+
