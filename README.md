@@ -45,7 +45,7 @@ Card and Cash inherit from the base class Transaction. This means they are speci
 ## Instructions
 Download the file and run in terminal with:
 ```bash
-g++ main.cpp Product.cpp Customer.cpp Cart.cpp Transaction.cpp Payment.cpp 
+g++ main.cpp Product.cpp Customer.cpp Transaction.cpp Bank.h Bills.h
 ```
 ## Run the program
 ```bash
