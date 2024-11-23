@@ -1,19 +1,19 @@
-#ifndef CASH_H
-#define CASH_H
+#ifndef CARD_H
+#define CARD_H
 
 #include "Transaction.h"
 #include <string>
 using namespace std;
 
-class Cash : public Transaction {
+class Card : public Transaction {
 private:
-    string bills;
+    string bank;
 
 public:
-    Cash(int transId, Customer transCustomer, double transAmount, string transMethod, Product transProduct, string cashBills);
+    Card(int transId, Customer transCustomer, double transAmount, string transMethod, Product transProduct, string cardBank);
 
-    void setBills(string newBills);
-    string getBills();
+    void setBank(string newBank);
+    string getBank();
     string getTransactionData() override;
 };
 
