@@ -9,10 +9,10 @@ int Product::getId() { return id; }
 string Product::getName() { return name; }
 double Product::getPrice() { return price; }
 
-// Setters
+// Setter
 void Product::setPrice(double newPrice) { price = newPrice; }
 
-// Method to get full product data
+// Method to get product data
 string Product::getProductData() {
     return "Product ID: " + to_string(id) + ", Name: " + name + ", Price: $" + to_string(price);
 }
