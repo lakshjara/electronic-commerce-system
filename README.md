@@ -39,7 +39,8 @@ Card and Cash inherit from the base class Transaction. This means they are speci
 5. The system can query and manage the details of any recorded transaction.
 
 ## UML Diagram
-![image](https://github.com/user-attachments/assets/6c216f84-be1f-4e9d-a291-4eda0ae851fc)
+![image](https://github.com/user-attachments/assets/bb76c6c5-9fbb-47fa-bb6e-db0b4344dc77)
+
 
 ## Instructions
 Download the file and run in terminal with:
