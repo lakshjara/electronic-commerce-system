@@ -10,7 +10,7 @@ private:
     string bills;
 
 public:
-    Cash(int transId, Customer transCustomer, double transAmount, Product transProduct, string cashBills);
+    Cash(int transId, Customer transCustomer, double transAmount, string transMethod, Product transProduct, string cashBills);
 
     void setBills(string newBills);
     string getBills();
