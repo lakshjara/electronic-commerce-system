@@ -1,10 +1,10 @@
 #include "Card.h"
 
 // Constructor
-Card::Card(int transId, Customer transCustomer, double transAmount, Product transProduct, string cardBank)
-    : Transaction(transId, transCustomer, transAmount, "Card", transProduct), bank(cardBank) {}
+Card::Card(int transId, Customer transCustomer, double transAmount, string transMethod, Product transProduct, string cardBank)
+    : Transaction(transId, transCustomer, transAmount, transMethod, transProduct), bank(cardBank) {}
 
-// Getter and Setter for bank
+// Setter and Getter
 void Card::setBank(string newBank) { bank = newBank; }
 string Card::getBank() { return bank; }
 
