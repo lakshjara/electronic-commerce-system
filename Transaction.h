@@ -22,9 +22,8 @@ public:
     double getAmount();
     string getMethod();
     Product getProduct();
-    virtual string getTransactionData(); // Virtual for inheritance
-    virtual ~Transaction() = default;   // Virtual destructor
+    virtual string getTransactionData();
+    virtual ~Transaction() = default; // Virtual destructor
 };
 
 #endif
-
