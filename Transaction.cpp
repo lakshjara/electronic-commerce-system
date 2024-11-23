@@ -11,11 +11,10 @@ double Transaction::getAmount() { return amount; }
 string Transaction::getMethod() { return method; }
 Product Transaction::getProduct() { return product; }
 
-// Method to get full transaction data
+// Method to get transaction data
 string Transaction::getTransactionData() {
     return "Transaction ID: " + to_string(transactionId) + "\n" +
            customer.getCustomerData() + "\n" +
            product.getProductData() + "\n" +
            "Amount: $" + to_string(amount) + ", Method: " + method;
 }
-
