@@ -1,10 +1,10 @@
 #include "Cash.h"
 
 // Constructor
-Cash::Cash(int transId, Customer transCustomer, double transAmount, Product transProduct, string cashBills)
-    : Transaction(transId, transCustomer, transAmount, "Cash", transProduct), bills(cashBills) {}
+Cash::Cash(int transId, Customer transCustomer, double transAmount, string transMethod, Product transProduct, string cashBills)
+    : Transaction(transId, transCustomer, transAmount, transMethod, transProduct), bills(cashBills) {}
 
-// Getter and Setter for bills
+// Setter and Getter
 void Cash::setBills(string newBills) { bills = newBills; }
 string Cash::getBills() { return bills; }
 
