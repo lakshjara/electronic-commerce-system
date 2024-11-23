@@ -10,7 +10,7 @@ private:
     string bank;
 
 public:
-    Card(int transId, Customer transCustomer, double transAmount, Product transProduct, string cardBank);
+    Card(int transId, Customer transCustomer, double transAmount, string transMethod, Product transProduct, string cardBank);
 
     void setBank(string newBank);
     string getBank();
