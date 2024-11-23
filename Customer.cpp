@@ -1,18 +1,23 @@
-#include "Customer.h"
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
 
-// Constructor
-Customer::Customer(int customerId, string customerName, string customerEmail)
-    : id(customerId), name(customerName), email(customerEmail) {}
+#include <string>
+using namespace std;
 
-// Getters
-int Customer::getId() { return id; }
-string Customer::getName() { return name; }
-string Customer::getEmail() { return email; }
+class Customer {
+private:
+    int id;
+    string name;
+    string email;
 
-// Setters
-void Customer::setEmail(string newEmail) { email = newEmail; }
+public:
+    Customer(int customerId, string customerName, string customerEmail);
 
-// Method to get full customer data
-string Customer::getCustomerData() {
-    return "Customer ID: " + to_string(id) + ", Name: " + name + ", Email: " + email;
-}
+    int getId();
+    string getName();
+    string getEmail();
+    void setEmail(string newEmail);
+    string getCustomerData();
+};
+
+#endif
